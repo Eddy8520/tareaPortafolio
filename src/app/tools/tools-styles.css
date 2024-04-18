@@ -1,0 +1,23 @@
+.fadeIn {
+    animation: fadeInAnimation 1s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.toolImage {
+    position: absolute;
+    transition: filter 0.5s ease;
+}
+
+.toolImage:hover {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
